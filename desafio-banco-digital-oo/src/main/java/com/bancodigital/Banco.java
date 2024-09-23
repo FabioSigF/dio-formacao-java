@@ -15,13 +15,13 @@ public class Banco {
     @NonNull private String nome;
     private List<Conta> contas;
 
-    public void listarClientes() {
+    public void listarContas() {
         if (contas == null || contas.isEmpty()) {
             System.out.println("Nenhum cliente cadastrado.");
             return;
         }
 
-        System.out.println("Clientes cadastrados no banco " + nome + ":");
+        System.out.println("Contas cadastrados no banco " + nome + ":");
         for (Conta conta : contas) {
             System.out.println("Cliente: " + conta.getCliente().getNome());
         }

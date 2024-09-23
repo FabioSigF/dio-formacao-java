@@ -19,6 +19,6 @@ public class Main {
         listaDeContas.add(poupanca);
 
         banco.setContas(listaDeContas);
-        banco.listarClientes();
+        banco.listarContas();
     }
 }
